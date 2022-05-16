@@ -1,44 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-
 import {GlobalStyles, lightTheme, darkTheme} from './styles/theme';
 
+import {Header} from './components/Header/index';
+
+type ButtonProps ={
+  darkTheme:boolean;
+}
+
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState<string>("light");
   const isDarkTheme = theme === "dark";
 
-  const toggleTheme = () => {
-    const updatedTheme = isDarkTheme ? "light" : "dark";
+  const [parentName, setParentName] = useState<string>('John Obi')
+
+  const themeResult = (themeResult:boolean):void => {
+    const updatedTheme = themeResult ? "light" : "dark";
     setTheme(updatedTheme);
-    localStorage.setItem("theme", updatedTheme);
-  };
+  }
 
-  useEffect(() => {
-    //Getting the last theme choosed from localStorage
-    const savedTheme = localStorage.getItem("theme");
-    //Checking user preference
-    const prefersDark = window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    //If the theme has been set use it, else use the user preference
-    if (savedTheme && ["dark", "light"].includes(savedTheme)) {
-      setTheme(savedTheme);
-    } else if (prefersDark) {
-      setTheme("dark");
-    }
-  }, []);
-
+  const updateName = (name: string):void => {
+    setTheme(name)
+}
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <>
         <GlobalStyles />
+        <Header  name={parentName} updateName={updateName} />
 
-        <button onClick={toggleTheme}>
-          {isDarkTheme ?
-            <span aria-label="Light mode" role="img">🌞</span> :
-            <span aria-label="Dark mode" role="img">🌜</span>}
-        </button>
       </>
     </ThemeProvider>
   );
