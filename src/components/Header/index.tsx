@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 
 interface FuncProps {
   name:string;
-  updateName: (arg: string) => void
+  updateTheme: (arg: string) => void
 }
 
-export function Header({name,updateName}:FuncProps) {
+export function Header({name,updateTheme}:FuncProps) {
   const [theme, setTheme] = useState<string>("light");
   const isDarkTheme = theme === "dark";
 
-  const [firstChildName, setFirstChildName] = useState<string>('')
+  const [firstChildName, setFirstChildName] = useState<string>('');
 
   useEffect(() => {
     //Getting the last theme choosed from localStorage
@@ -31,7 +31,7 @@ export function Header({name,updateName}:FuncProps) {
     setTheme(updatedTheme);
     localStorage.setItem("theme", updatedTheme);
 
-    updateName(updatedTheme);
+    updateTheme(updatedTheme);
   };
 
   useEffect(() => {  setFirstChildName(name)},[name])
@@ -43,8 +43,6 @@ export function Header({name,updateName}:FuncProps) {
       <span aria-label="Light mode" role="img">🌞</span> :
       <span aria-label="Dark mode" role="img">🌜</span>}
       </button>
-
-      <h1>{firstChildName}</h1>
       </div>
   )
 
