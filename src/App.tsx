@@ -8,7 +8,6 @@ import { ThemeProvider } from 'styled-components';
 import {GlobalStyles, lightTheme, darkTheme} from './styles/theme';
 
 import {Header} from './components/Header/index';
-import { Main } from './pages/Main';
 
 function App() {
   const [theme, setTheme] = useState<string>("dark");

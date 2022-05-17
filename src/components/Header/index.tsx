@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
+import { NavLink, Outlet } from "react-router-dom";
 
-import {Container } from './styles';
+import {Container, NavigationMenu, PersonalLogo, ThemeToggle } from './styles';
 
 interface FuncProps {
   themeModeProps:string;
@@ -39,13 +40,45 @@ export function Header({themeModeProps,updateTheme}:FuncProps) {
   useEffect(() => {  setFirstChildName(themeModeProps)},[themeModeProps])
 
   return (
+    
     <Container>
-      <button onClick={toggleTheme}>
-      {isDarkTheme ?
-        <span aria-label="Light mode" role="img">🌞</span> :
-        <span aria-label="Dark mode" role="img">🌜</span>}
-        </button>
+      <PersonalLogo>
 
+      </PersonalLogo>
+      <NavigationMenu>
+        <NavLink  
+          className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
+         to="/" > Home
+         </NavLink>
+         <NavLink  
+          className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
+         to="/about" > About
+         </NavLink>
+         <NavLink  
+          className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
+         to="/skills" > Skills
+         </NavLink>
+         <NavLink  
+          className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
+         to="/experience" > Experience
+         </NavLink>
+         <NavLink  
+          className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
+         to="/portfolio" > Portfolio
+         </NavLink>
+         <NavLink  
+          className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
+         to="/contact" > Contact
+         </NavLink>
+      </NavigationMenu>
+      <Outlet />
+      <ThemeToggle>
+        <button onClick={toggleTheme}>
+        {isDarkTheme ?
+          <span aria-label="Light mode" role="img">🌞</span> :
+          <span aria-label="Dark mode" role="img">🌜</span>}
+          </button>
+      </ThemeToggle>
       </Container>
   )
 
