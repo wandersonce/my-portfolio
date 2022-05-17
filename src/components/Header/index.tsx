@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, Outlet } from "react-router-dom";
 
-import {Container, HamburgerButton, Lines, NavigationMenu, PersonalLogo, ThemeToggle } from './styles';
+import {Container, HamburgerButton, Lines, PersonalLogo, ThemeToggle } from './styles';
 
 import LogoWhite from '../../assets/logoWhite.svg';
 import LogoBlack from '../../assets/logoBlack.svg';
+import { NavigationMenuList } from '../NavigationMenu';
 
 interface FuncProps {
   themeModeProps:string;
@@ -16,7 +17,6 @@ export function Header({themeModeProps,updateTheme}:FuncProps) {
   const isDarkTheme = theme === "dark";
 
   const [firstChildName, setFirstChildName] = useState<string>('');
-
 
   //Theme handle useEffect
   useEffect(() => {
@@ -44,7 +44,6 @@ export function Header({themeModeProps,updateTheme}:FuncProps) {
 
   useEffect(() => {  setFirstChildName(themeModeProps)},[themeModeProps])
 
-
   return (
     
     <Container>
@@ -56,44 +55,8 @@ export function Header({themeModeProps,updateTheme}:FuncProps) {
         <Lines />
       </HamburgerButton>
 
-        <NavigationMenu >
-          <li>
-          <NavLink  
-            className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
-          to="/" > Home
-          </NavLink>
-          </li>
-          <li>
-          <NavLink  
-            className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
-          to="/about" > About
-          </NavLink>
-          </li>
-          <li>
-          <NavLink  
-            className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
-          to="/skills" > Skills
-          </NavLink>
-          </li>
-          <li>
-          <NavLink  
-            className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
-          to="/experience" > Experience
-          </NavLink>
-          </li>
-          <li>
-          <NavLink  
-            className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
-          to="/portfolio" > Portfolio
-          </NavLink>
-          </li>
-          <li>
-          <NavLink  
-            className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 
-          to="/contact" > Contact
-          </NavLink>
-          </li>
-        </NavigationMenu>
+    <NavigationMenuList />
+        
       <Outlet />
       <ThemeToggle>
         <button onClick={toggleTheme}>
