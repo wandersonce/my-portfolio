@@ -5,7 +5,8 @@ import {GlobalStyles, lightTheme, darkTheme} from './styles/theme';
 import {Header} from './components/Header/index';
 
 function App() {
-  const [theme, setTheme] = useState<string>("light");
+  const [theme, setTheme] = useState<string>("dark");
+  const [themeMode, setThemeMode] = useState<string>('dark')
   const isDarkTheme = theme === "dark";
 
   useEffect(() => {
@@ -23,8 +24,6 @@ function App() {
     }
   }, []);
 
-  const [themeMode, setThemeMode] = useState<string>('light')
-
   const changeThemeMode = (themeMode: string):void => {
     setTheme(themeMode)
 }
@@ -33,7 +32,7 @@ function App() {
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <>
         <GlobalStyles />
-        <Header  name={themeMode} updateTheme={changeThemeMode} />
+        <Header  themeModeProps={themeMode} updateTheme={changeThemeMode} />
 
       </>
     </ThemeProvider>

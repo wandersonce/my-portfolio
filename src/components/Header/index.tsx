@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 
+import {Container } from './styles';
+
 interface FuncProps {
-  name:string;
+  themeModeProps:string;
   updateTheme: (arg: string) => void
 }
 
-export function Header({name,updateTheme}:FuncProps) {
-  const [theme, setTheme] = useState<string>("light");
+export function Header({themeModeProps,updateTheme}:FuncProps) {
+  const [theme, setTheme] = useState<string>("dark");
   const isDarkTheme = theme === "dark";
 
   const [firstChildName, setFirstChildName] = useState<string>('');
@@ -34,16 +36,27 @@ export function Header({name,updateTheme}:FuncProps) {
     updateTheme(updatedTheme);
   };
 
-  useEffect(() => {  setFirstChildName(name)},[name])
+  useEffect(() => {  setFirstChildName(themeModeProps)},[themeModeProps])
 
   return (
-    <div>
-    <button onClick={toggleTheme}>
-    {isDarkTheme ?
-      <span aria-label="Light mode" role="img">🌞</span> :
-      <span aria-label="Dark mode" role="img">🌜</span>}
-      </button>
-      </div>
+    <Container>
+      <button onClick={toggleTheme}>
+      {isDarkTheme ?
+        <span aria-label="Light mode" role="img">🌞</span> :
+        <span aria-label="Dark mode" role="img">🌜</span>}
+        </button>
+
+        <div className="center-container">
+          <div></div>
+          <div>
+            <h1 className="fadeIn-item">
+            I'm <br />
+            Wanderson <br />
+            Castro
+          </h1>
+          </div>
+        </div>
+      </Container>
   )
 
 }
