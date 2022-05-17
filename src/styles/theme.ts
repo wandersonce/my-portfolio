@@ -53,6 +53,12 @@ export const GlobalStyles = createGlobalStyle<MyProps>`
     opacity:0.6;
     cursor:not-allowed;
   }
+
+  @media only screen and (max-width: 640px) {
+    body{
+      overflow-x:hidden;
+    }
+  }
 `;
 
 export const lightTheme = {
