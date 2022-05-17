@@ -19,9 +19,14 @@ position:relative;
   div{
     display:flex;
     flex-basis:50%;
-    align-items:center;
+    align-items:flex-start;
     justify-content:center;
+    flex-direction:column;
     padding:4rem;
+
+    h3{ 
+      font-size:1.6rem;
+    }
   }
 
   div h1{

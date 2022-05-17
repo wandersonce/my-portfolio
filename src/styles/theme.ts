@@ -41,6 +41,10 @@ export const GlobalStyles = createGlobalStyle<MyProps>`
     font-weight:600;
   }
 
+  a{
+    color: ${({ theme }) => theme.text};
+  }
+
   button{
     cursor:pointer;
   }
@@ -53,10 +57,10 @@ export const GlobalStyles = createGlobalStyle<MyProps>`
 
 export const lightTheme = {
   body: '#f1f1f1',
-  text: '#000000'
+  text: '#000000',
 };
 
 export const darkTheme = {
   body: '#000000',
-  text: '#f1f1f1'
+  text: '#f1f1f1',
 };

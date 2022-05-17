@@ -14,7 +14,7 @@ const RouteElement = (): JSX.Element => {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/skills" element={<Skills />} />
-      <Route path="/porfolio" element={<Portfolio />} />
+      <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/experience" element={<Experience />} />
     </Routes>
   );

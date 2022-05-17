@@ -9,22 +9,32 @@ export const Container = styled.header`
   z-index: 9999;
 `;
 
-export const PersonalLogo = styled.div``;
-export const NavigationMenu = styled.nav`
+export const PersonalLogo = styled.div`
+margin: auto;
 
-.navActive{
-  color:red;
-}
-
-.navNotActive{
-  color:#fff;
+img{
+  width: 300px;
 }
 `;
+export const NavigationMenu = styled.nav`
+margin: auto;
+
+a{
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.navActive{
+  color:#DC5126;
+}
+
+`;
 export const ThemeToggle = styled.div`
+margin: auto;
 button{
-  position:absolute;
-  top:30px;
-  right:30px;
+  margin: auto;
   background:none;
   border:none;
   span{

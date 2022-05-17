@@ -12,6 +12,7 @@ export function Main() {
       Wanderson <br />
       Castro
     </h1>
+    <h3>Front-end Developer</h3>
     </div>
   </div>
  </Container>
