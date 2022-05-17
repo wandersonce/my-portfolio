@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import backgroundNameImg from '../../assets/test.jpeg';
+import backgroundNameImg from '../../assets/coding6.jpg';
 
 export const Container = styled.div`
 display: flex;
@@ -32,8 +32,8 @@ position:relative;
   div h1{
     font-size:7rem;
     font-weight:bold;
-    background: url(${backgroundNameImg})  no-repeat center;
-    background-size: cover;
+    background: url(${backgroundNameImg})  no-repeat left;
+    background-size: contain;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
