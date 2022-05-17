@@ -3,6 +3,13 @@ import styled from 'styled-components';
 import backgroundNameImg from '../../assets/test.jpeg';
 
 export const Container = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100vh;
+position:relative;
+
 .center-container{
   height:100%;
   width:100%;

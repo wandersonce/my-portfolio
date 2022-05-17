@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import {
+  BrowserRouter,
+} from "react-router-dom";
+import Routes from './routes';
+
 import { ThemeProvider } from 'styled-components';
 import {GlobalStyles, lightTheme, darkTheme} from './styles/theme';
 
 import {Header} from './components/Header/index';
-import { Main } from './components/Main';
+import { Main } from './pages/Main';
 
 function App() {
   const [theme, setTheme] = useState<string>("dark");
@@ -30,14 +35,13 @@ function App() {
 }
 
   return (
-    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-      <>
-        <GlobalStyles />
-        <Header  themeModeProps={themeMode} updateTheme={changeThemeMode} />
-        <Main />
-
-      </>
-    </ThemeProvider>
+      <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+          <BrowserRouter>
+              <GlobalStyles />
+              <Header  themeModeProps={themeMode} updateTheme={changeThemeMode} />
+              <Routes />
+          </BrowserRouter>
+        </ThemeProvider>
   );
 }
 

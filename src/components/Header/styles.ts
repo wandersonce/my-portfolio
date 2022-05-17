@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display:fixed;
   width: 100%;
   position:relative;
+  height: 100px;
+  margin-bottom: -100px;
+  z-index: 9999;
 
   button{
     position:absolute;
