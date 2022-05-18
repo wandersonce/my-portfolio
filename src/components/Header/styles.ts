@@ -4,9 +4,8 @@ export const Container = styled.header`
 display: flex;
 justify-content: space-between;
 align-items: center;
-width: 100vw;
+width: 100%;
 height: 100px;
-margin-bottom: -100px;
 z-index: 9990;
 position:relative;
 
