@@ -59,7 +59,9 @@ position:relative;
 @media only screen and (max-width: 810px) {
   .center-container{
     flex-direction:column-reverse;
-    
+    div{
+      padding:2rem;
+    }
     div h1{
       font-size:6rem;
     }
