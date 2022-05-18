@@ -1,10 +1,15 @@
 import { NavLink, Outlet } from "react-router-dom";
 
-import {NavigationMenu} from './styles'
+import {NavigationMenu} from './styles';
 
-export function NavigationMenuList() {
+interface NavigationMenuListProps{
+  open: boolean;
+}
+
+
+export function NavigationMenuList({open}:NavigationMenuListProps) {
   return(
-    <NavigationMenu >
+    <NavigationMenu open={open}>
           <li>
           <NavLink  
             className={({ isActive }) => isActive ? "navActive" : "navNotActive"} 

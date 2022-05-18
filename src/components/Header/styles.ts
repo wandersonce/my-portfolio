@@ -7,7 +7,7 @@ align-items: center;
 width: 100vw;
 height: 100px;
 margin-bottom: -100px;
-z-index: 9999;
+z-index: 9990;
 position:relative;
 
   @media only screen and (max-width: 640px) {

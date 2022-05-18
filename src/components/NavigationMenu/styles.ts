@@ -6,18 +6,20 @@ list-style: none;
 flex-flow: row nowrap;
 
 @media only screen and (max-width: 810px) {
-  display:none;
   position: fixed;
   right: 0;
   top: 0;
-
+  
   height: 100vh;
   width: 300px;
-
+  
   flex-flow: column nowrap;
-
+  
   background-color: red;
   padding: 1rem 2rem;
+
+  transform: ${({open}:OpenState) => open ? 'translateX(0)' : 'translateX(100%)'};
+  transition: transform 0.3s ease-in-out;
 }
 
 a{
@@ -52,9 +54,16 @@ export const BurgerMenu = styled.div`
   position: fixed;
   bottom: 15px;
   right:20px;
-  display:flex;
-  justify-content:space-around;
-  flex-flow: column nowrap;
+  display:none;
+
+  cursor:pointer;
+  z-index: 9999;
+
+  @media(max-width:810px){
+    display:flex;
+    justify-content:space-around;
+    flex-flow: column nowrap;
+  }
 
   div{
     width: 2rem;

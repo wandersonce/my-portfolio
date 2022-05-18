@@ -5,7 +5,6 @@ import {Container, PersonalLogo, ThemeToggle } from './styles';
 
 import LogoWhite from '../../assets/logoWhite.svg';
 import LogoBlack from '../../assets/logoBlack.svg';
-import { NavigationMenuList } from '../NavigationMenu';
 import { Burger } from '../NavigationMenu/Burger';
 
 interface FuncProps {
@@ -51,9 +50,8 @@ export function Header({themeModeProps,updateTheme}:FuncProps) {
       <PersonalLogo>
       {isDarkTheme ? <img src={LogoWhite} alt="Wanderson Castro" /> : <img src={LogoBlack} alt="Wanderson Castro" /> }
       </PersonalLogo>
-      
+
     <Burger />
-    <NavigationMenuList />
         
       <Outlet />
       <ThemeToggle>
