@@ -15,8 +15,10 @@ flex-flow: row nowrap;
   
   flex-flow: column nowrap;
   
-  background-color: red;
+  background-color: #999FAD;
   padding: 1rem 2rem;
+  -webkit-box-shadow: -9px 0px 17px 2px rgba(0,0,0,0.24); 
+  box-shadow: -9px 0px 17px 2px rgba(0,0,0,0.24);
 
   transform: ${({open}:OpenState) => open ? 'translateX(0)' : 'translateX(100%)'};
   transition: transform 0.3s ease-in-out;
@@ -43,7 +45,6 @@ li{
 }
 `;
 
-
 interface OpenState{
   open: boolean;
 }
@@ -55,7 +56,6 @@ export const BurgerMenu = styled.div`
   bottom: 15px;
   right:20px;
   display:none;
-
   cursor:pointer;
   z-index: 9999;
 
@@ -65,10 +65,14 @@ export const BurgerMenu = styled.div`
     flex-flow: column nowrap;
   }
 
+  @media(max-width:680px){
+    bottom: 25px;
+  }
+
   div{
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({open}:OpenState) => open ? '#DC5126;' : '#fff;'}
+    background-color: ${({open}:OpenState) => open ? '#FFF;' : '#DC5126;'}
     border-radius: 10px;
     transform-origin: 1px;
 

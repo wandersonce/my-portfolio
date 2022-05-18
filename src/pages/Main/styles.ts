@@ -56,10 +56,18 @@ position:relative;
     }
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 810px) {
   .center-container{
     flex-direction:column-reverse;
+    
+    div h1{
+      font-size:6rem;
+    }
+  }
+}
 
+@media only screen and (max-width: 640px) {
+  .center-container{
     div h1{
       font-size:4rem;
     }
