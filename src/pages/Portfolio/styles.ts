@@ -12,14 +12,14 @@ margin: 60px auto;
     font-size:2.5rem;
   }
 
-  >p{
+  >div >p{
     text-align:right;
     position:relative;
     font-weight:bold;
     font-size:1.2rem;
   }
 
-  >p::before{
+  >div>p::before{
     content:'';
     width:50%;
     height:2px;
@@ -32,5 +32,18 @@ margin: 60px auto;
 `;
 
 export const PortfolioBox = styled.div`
+  display: grid;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 30px;
+  margin-top: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 
+   >div a{
+    max-width: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-decoration: none;
+  }
 `;

@@ -1,5 +1,3 @@
-import React, { useRef, useEffect } from 'react'
-
 import item from  './portfolioItem';
 import { PortfolioBox } from './styles'
 
@@ -9,8 +7,10 @@ export function PortfolioItems() {
     <PortfolioBox>
       {item.map((job, i) => (
                     <div key={i} >
+                      <a href="#" >
                       <p>{job.title}</p>
-                      <p>{job.description}</p>
+                      <img src={job.img} alt={job.title} />
+                      </a>
                     </div>
         ))}
     </PortfolioBox>
