@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
-import {Container, HamburgerButton, Lines, PersonalLogo, ThemeToggle } from './styles';
+import {Container, PersonalLogo, ThemeToggle } from './styles';
 
 import LogoWhite from '../../assets/logoWhite.svg';
 import LogoBlack from '../../assets/logoBlack.svg';
 import { NavigationMenuList } from '../NavigationMenu';
+import { Burger } from '../NavigationMenu/Burger';
 
 interface FuncProps {
   themeModeProps:string;
@@ -50,11 +51,8 @@ export function Header({themeModeProps,updateTheme}:FuncProps) {
       <PersonalLogo>
       {isDarkTheme ? <img src={LogoWhite} alt="Wanderson Castro" /> : <img src={LogoBlack} alt="Wanderson Castro" /> }
       </PersonalLogo>
-
-      <HamburgerButton >
-        <Lines />
-      </HamburgerButton>
-
+      
+    <Burger />
     <NavigationMenuList />
         
       <Outlet />

@@ -31,65 +31,6 @@ img{
 }
 `;
 
-
-
-export const HamburgerButton  = styled.button`
-height: 3rem;
-width: 3rem;
-position: relative;
-font-size: 12px;
-
-display: none;
-
-@media only screen and (max-width: 640px) {
-  display: block;
-}
-
-/* Remove default button styles */
-border: none;
-background: transparent;
-outline: none;
-
-cursor: pointer;
-
-&:after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 150%;
-  width: 150%;
-  top: -25%;
-  left: -25%;
-}
-`;
-
-export const Lines  = styled.div`
-top: 50%;
-margin-top: -0.125em;
-
-&,
-&:after,
-&:before {
-  height: 2px;
-  pointer-events: none;
-  display: block;
-  content: "";
-  width: 100%;
-  background-color:${({ theme }) => theme.text};
-  position: absolute;
-}
-
-&:after {
-  /* Move bottom line below center line */
-  top: -0.8rem;
-}
-
-&:before {
-  /* Move top line on top of center line */
-  top: 0.8rem;
-}
-`;
-
 export const ThemeToggle = styled.div`
 margin: auto;
 button{
