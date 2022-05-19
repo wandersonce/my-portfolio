@@ -1,18 +1,19 @@
 import item from  './portfolioItem';
-import { PortfolioBox } from './styles'
+import { PortfolioBox } from './styles';
 
-export function PortfolioItems() {
-  
+export function PortfolioItems({ postsToRender }: any) {
+
   return(
     <PortfolioBox>
-      {item.map((job, i) => (
+      {postsToRender.map((job:any, i:number) => (
                     <div key={i} >
                       <a href="#" >
-                      <p>{job.title}</p>
+                      <p className="itemTitle">{job.title}</p>
                       <img src={job.img} alt={job.title} />
                       </a>
                     </div>
         ))}
     </PortfolioBox>
+
   )
 }

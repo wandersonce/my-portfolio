@@ -46,4 +46,16 @@ export const PortfolioBox = styled.div`
     flex-flow: column nowrap;
     text-decoration: none;
   }
+
+  .itemTitle{
+    text-align: center;
+  }
+
+  @media(max-width:810px){
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media(max-width:680px){
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
