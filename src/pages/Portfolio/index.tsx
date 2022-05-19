@@ -77,6 +77,7 @@ export function Portfolio() {
         </div>
 
         <GitInformation />
+        <p>Information from GitHub API</p>
 
       </Container>
     
