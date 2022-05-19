@@ -11,6 +11,14 @@ export type MyProps = {
 }
 
 export const GlobalStyles = createGlobalStyle<MyProps>`
+:root{
+  --orange: #F58735;
+  --light-gray: #DDDDDD;
+  --middle-gray: #A8ACB8;
+  --dark-gray: #999FAD;
+  --blue:#3F547F;
+}
+
 *{
   margin:0;
   padding:0;

@@ -7,8 +7,10 @@ export function PortfolioItems({ postsToRender }: any) {
     <PortfolioBox>
       {postsToRender.map((job:any, i:number) => (
                     <div key={i} >
-                      <a href="#" >
-                      <p className="itemTitle">{job.title}</p>
+                      <a target="_blank" href={job.website} rel="noreferrer" >
+                        <div className="titleWrapper">
+                          <p className="itemTitle">{job.title}</p>
+                        </div>
                       <img src={job.img} alt={job.title} />
                       </a>
                     </div>

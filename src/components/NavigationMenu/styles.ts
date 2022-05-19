@@ -15,7 +15,7 @@ flex-flow: row nowrap;
   
   flex-flow: column nowrap;
   
-  background-color: #999FAD;
+  background-color: var(--dark-gray);
   padding: 1rem 2rem;
   -webkit-box-shadow: -9px 0px 17px 2px rgba(0,0,0,0.24); 
   box-shadow: -9px 0px 17px 2px rgba(0,0,0,0.24);
@@ -32,7 +32,7 @@ a{
 }
 
 .navActive{
-  color:#DC5126;
+  color:var(--orange);
 }
 
 li{
@@ -72,7 +72,7 @@ export const BurgerMenu = styled.div`
   div{
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({open}:OpenState) => open ? '#FFF;' : '#DC5126;'}
+    background-color: ${({open}:OpenState) => open ? '#FFF;' : '#F58735;'}
     border-radius: 10px;
     transform-origin: 1px;
 

@@ -3,17 +3,23 @@ import {motion} from 'framer-motion';
 import { PortfolioItems } from './PortfolioItems';
 
 import item from  './portfolioItem';
+import GitLogo from '../../assets/github.png'
+import GitLogoWhite from '../../assets/githubWhite.png'
 
 import {Container} from './styles';
+import GitInformation from './GitInformation';
 
 const postsPerPage= 8;
 let arrayForHoldingPosts:any = [];
 
 export function Portfolio() {
+  const savedTheme = localStorage.getItem("theme");
 
   const [postsToShow, setPostsToShow] = useState([]);
   const [next, setNext] = useState(8);
   const [buttonVisible, setButtonVisible] = useState(true);
+  const [getMyTheme, setMyTheme] = useState(savedTheme);
+
 
   const loopWithSlice = (start:number,end:number) => {
     const slicedPosts = item.slice(start, end);
@@ -32,8 +38,8 @@ export function Portfolio() {
   }, []);
   
   useEffect(() => {
-    console.log(buttonVisible);
-  }, [buttonVisible]);
+    setMyTheme(savedTheme);
+  }, [savedTheme]);
 
   const handleShowMorePosts = () => {
     loopWithSlice(next, next + postsPerPage);
@@ -55,8 +61,22 @@ export function Portfolio() {
         </div>
 
       <PortfolioItems postsToRender={postsToShow} />
-      
-      {buttonVisible ? <button onClick={handleShowMorePosts}>Load more</button> : ' '}
+
+      {buttonVisible ? 
+      <button onClick={handleShowMorePosts}>Load more</button> 
+      : ' '}
+
+        <div>
+          <div className="gitHeader-Wrapper">
+          {getMyTheme == 'light' ?
+           <img src={GitLogo} alt="Github Logo" /> 
+          : <img src={GitLogoWhite} alt="Github Logo" />  }
+              <h2>GitHub Repositories</h2>
+          </div>
+          <p>Some of my Projects</p>
+        </div>
+
+        <GitInformation />
 
       </Container>
     
