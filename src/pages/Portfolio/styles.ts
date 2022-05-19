@@ -27,8 +27,23 @@ margin: 60px auto;
     background-color: #fff;
     top:50%;
     left:0;
-    transform: translate(0, -50%)
+    transform: translate(0, -50%);
   }
+
+  button{
+    padding: 10px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color:#DC5126;
+    color:#fff;
+    border: none;
+    margin-top: 30px;
+
+    &:hover{
+      filter: brightness(0.9);
+    }
+  }
+
 `;
 
 export const PortfolioBox = styled.div`

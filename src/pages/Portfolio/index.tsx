@@ -6,26 +6,38 @@ import item from  './portfolioItem';
 
 import {Container} from './styles';
 
-const postsPerPage= 4;
+const postsPerPage= 8;
 let arrayForHoldingPosts:any = [];
 
 export function Portfolio() {
 
   const [postsToShow, setPostsToShow] = useState([]);
-  const [next, setNext] = useState(4);
+  const [next, setNext] = useState(8);
+  const [buttonVisible, setButtonVisible] = useState(true);
 
   const loopWithSlice = (start:number,end:number) => {
     const slicedPosts = item.slice(start, end);
     arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedPosts];
+    console.log(slicedPosts, arrayForHoldingPosts)
+    if(slicedPosts.length <= 4 && arrayForHoldingPosts.length >= 9){
+      console.log('here');
+      setButtonVisible(false);
+    }
     setPostsToShow(arrayForHoldingPosts);
   };
-
+  
   useEffect(() => {
+    arrayForHoldingPosts = [];
     loopWithSlice(0, postsPerPage);
   }, []);
+  
+  useEffect(() => {
+    console.log(buttonVisible);
+  }, [buttonVisible]);
 
   const handleShowMorePosts = () => {
     loopWithSlice(next, next + postsPerPage);
+    
     setNext(next + postsPerPage);
   };
 
@@ -43,7 +55,9 @@ export function Portfolio() {
         </div>
 
       <PortfolioItems postsToRender={postsToShow} />
-          <button onClick={handleShowMorePosts}>Load more</button>
+      
+      {buttonVisible ? <button onClick={handleShowMorePosts}>Load more</button> : ' '}
+
       </Container>
     
     </motion.div>
