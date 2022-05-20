@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion';
+import Education from './Education';
 import { Container } from './styles';
 export function About() {
 
@@ -31,6 +32,8 @@ export function About() {
             </div>
           </div>
         </div>
+
+        <Education />
       </Container>
       
     </motion.div>

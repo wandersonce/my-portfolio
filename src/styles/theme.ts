@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 export const theme = {
   body: String,
   text: String,
-  block: String
+  block: String,
+  textLight: String
 }
 
 export type MyProps = {
@@ -80,11 +81,13 @@ export const GlobalStyles = createGlobalStyle<MyProps>`
 export const lightTheme = {
   body: '#f1f1f1',
   text: '#323a4f',
-  block: '#DDDDDD;'
+  block: '#DDDDDD;',
+  textLight: 'var(--light-gray);'
 };
 
 export const darkTheme = {
   body: '#323a4f',
   text: '#f1f1f1',
-  block: '#999FAD;'
+  block: '#999FAD;',
+  textLight: 'var(--dark-gray);'
 };
