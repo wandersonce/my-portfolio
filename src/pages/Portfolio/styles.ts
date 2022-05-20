@@ -141,6 +141,12 @@ export const PortfolioBox = styled.div`
 
     >div a{
       height: 150px ;
+
+      img{
+        width: 100%;
+        height:100%;
+        object-fit:cover;
+      }
     }
   }
 `;
