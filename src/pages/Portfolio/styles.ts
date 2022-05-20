@@ -17,6 +17,7 @@ margin: 60px auto;
     position:relative;
     font-weight:bold;
     font-size:1.2rem;
+    var(--orange);
   }
 
   >div>p::before{

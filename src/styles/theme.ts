@@ -58,6 +58,7 @@ export const GlobalStyles = createGlobalStyle<MyProps>`
 
   a{
     color: ${({ theme }) => theme.text};
+    text-decoration:none;
   }
 
   button{
