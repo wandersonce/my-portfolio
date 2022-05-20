@@ -1,9 +1,13 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { fadeInUp, fadeInLeft } from 'react-animations';
+
+const fadeInUpAnimation = keyframes`${fadeInUp}`;
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
 
 export const Container = styled.div`
-
 h2{
   font-size:2.5rem;
+  animation: 1s ${fadeInUpAnimation};
 }
 
 .title-wrapper{
@@ -17,6 +21,7 @@ h2{
   font-weight:bold;
   font-size:1.2rem;
   color: var(--orange);
+  animation: 1s ${fadeInLeftAnimation};
 }
 
 .subtitle-header::before{
@@ -65,6 +70,7 @@ h2{
     font-weight: bold;
     text-transform: uppercase;
     background-color:var(--orange);
+    transition: all 0.3s ease-in-out;
 
     &:hover{
       filter: brightness(0.9);
@@ -117,8 +123,29 @@ h2{
     }
   }
 
+  .edu-right div:first-child{
+    position: relative;
+
+    &:after{
+      content:'';
+      position: absolute;
+      top:0;
+      left:-10px;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: var(--orange);
+      z-index: 10;
+    }
+  }
+
   .edu-right  div:last-child{
     padding-left: 30px;
+  }
+
+  .edu-left div:first-child {
+    text-align:right;
+    padding-right: 30px
   }
 
 }

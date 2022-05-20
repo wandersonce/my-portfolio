@@ -1,6 +1,9 @@
 import {motion} from 'framer-motion';
+import {Link} from "react-router-dom";
+
 import Education from './Education';
 import { Container } from './styles';
+
 export function About() {
 
   return(
@@ -27,8 +30,8 @@ export function About() {
                     Enthusiastic about meeting and exceeding customer and user expectations with successful website development. Well-versed in
                     validating and debugging code in order to resolve user and performance issues.</p>
             <div className="button-wrapper">
-              <a href="#" >SEE RESUME</a>
-              <a href="#" >CONTACT ME</a>
+              <a target="_blank" href={require('../../assets/resume.pdf')} rel="noreferrer" >SEE RESUME</a>
+              <Link to="/contact"> CONTACT ME</Link>
             </div>
           </div>
         </div>

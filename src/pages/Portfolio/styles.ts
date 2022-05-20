@@ -1,4 +1,9 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { fadeInUp, fadeInLeft } from 'react-animations';
+
+const fadeInUpAnimation = keyframes`${fadeInUp}`;
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+
 
 export const Container = styled.div`
 display: flex;
@@ -10,6 +15,7 @@ margin: 60px auto;
 
   h2{
     font-size:2.5rem;
+    animation: 1s ${fadeInUpAnimation};
   }
 
   >div >p{
@@ -17,7 +23,8 @@ margin: 60px auto;
     position:relative;
     font-weight:bold;
     font-size:1.2rem;
-    var(--orange);
+    color: var(--orange);
+    animation: 1s ${fadeInLeftAnimation};
   }
 
   >div>p::before{
