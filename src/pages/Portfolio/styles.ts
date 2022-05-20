@@ -138,6 +138,10 @@ export const PortfolioBox = styled.div`
 
   @media(max-width:680px){
     grid-template-columns: repeat(2, 1fr);
+
+    >div a{
+      height: 150px ;
+    }
   }
 `;
 
