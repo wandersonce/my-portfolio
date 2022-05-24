@@ -102,6 +102,7 @@ h2{
     flex-flow: row wrap;
     justify-content:center;
     align-items:center;
+    overflow: visible;
   }
 
   .edu-right{
@@ -117,25 +118,40 @@ h2{
     font-size:5rem;
     color:${({ theme }) => theme.textLight};
     transition: color 0.3s ease-in-out;
+    overflow: visible;
+    width: 190px;
 
     &:hover{
       color:var(--orange);
     }
   }
 
-  .edu-right div:first-child{
+  .edu-right:nth-child(4n+2) div:first-child,.edu-left:nth-child(3) div:last-child{
     position: relative;
 
     &:after{
       content:'';
       position: absolute;
-      top:0;
-      left:-10px;
+      top:50%;
+      left:-35px;
       border-radius: 50%;
-      width: 20px;
-      height: 20px;
+      transform: translate(0, -50%);
+      width: 10px;
+      height: 10px;
       background-color: var(--orange);
       z-index: 10;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover:after{
+      transform: scale(1.5);
+    }
+  }
+
+  .edu-left:nth-child(3) div:last-child{
+    &:after{
+      right:-20px;
+      left:unset;
     }
   }
 
