@@ -16,7 +16,7 @@ function Education() {
                     <div></div>
                 </div>
                 <div className="edu-right">
-                  <div>2016</div>
+                  <div>2015</div>
                   <div>
                    <p>Business Administration</p>
                    <p>University of Fortaleza</p>
@@ -26,7 +26,7 @@ function Education() {
 
                 <div className="edu-left">
                   <div>
-                   <p>Business Administration</p>
+                   <p>Computer Science</p>
                    <p>University of Fortaleza</p>
                    <p>Bachelor (Not-Completed)</p>
                   </div>
