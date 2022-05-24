@@ -115,7 +115,6 @@ h2{
   .edu-right, .edu-left{
     display: flex;
     flex-flow: row wrap;
-    justify-content:center;
     align-items:center;
     overflow: visible;
   }
@@ -127,6 +126,7 @@ h2{
 
   .edu-left{
     border-right: 2px solid var(--light-gray);
+    justify-content: flex-end;
   }
 
   .edu-right div:first-child, .edu-left div:last-child{
@@ -165,7 +165,7 @@ h2{
 
   .edu-left:nth-child(3) div:last-child{
     &:after{
-      right:-20px;
+      right:-06px;
       left:unset;
     }
   }
@@ -219,8 +219,63 @@ h2{
   .edu-left:nth-child(3) div:last-child::after{
     right: -6px ;
   }
-
 }
+
+  h3{
+    font-size:1.5rem;
+    margin-top: 60px;
+    animation: 1s ${fadeInUpAnimation};
+  }
+
+  .licensesWrapper{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+    background: ${({ theme }) => theme.block};
+
+    @media(max-width:680px){
+      min-height: 45vh;
+    }
+  }
+
+  .licCert-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid ${({ theme }) => theme.border};
+    
+    >div{
+      flex-basis: 50%;
+    }
+
+    >div:first-child{
+      text-align: center;
+      padding-right: 10px;
+
+      img {
+        width: 100px;
+      }
+    }
+
+    >div:last-child{
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    @media(max-width:680px){
+      padding: 20px;
+      flex-flow: column wrap;
+      >div:last-child{
+        font-size: 1rem;
+      }
+    }
+  }
 
 }
 `;

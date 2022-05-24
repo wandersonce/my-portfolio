@@ -4,7 +4,8 @@ export const theme = {
   body: String,
   text: String,
   block: String,
-  textLight: String
+  textLight: String,
+  border: String
 }
 
 export type MyProps = {
@@ -82,12 +83,14 @@ export const lightTheme = {
   body: '#f1f1f1',
   text: '#323a4f',
   block: '#DDDDDD;',
-  textLight: 'var(--light-gray);'
+  textLight: 'var(--light-gray);',
+  border: 'var(--dark-gray);'
 };
 
 export const darkTheme = {
   body: '#323a4f',
   text: '#f1f1f1',
   block: '#999FAD;',
-  textLight: 'var(--dark-gray);'
+  textLight: 'var(--dark-gray);',
+  border: 'var(--light-gray);'
 };
