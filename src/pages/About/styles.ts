@@ -57,7 +57,13 @@ h2{
     margin-bottom: 1rem;
   }
 
+  @media (max-width:680px){
+    flex-flow: column wrap;
 
+    >div{
+      flex-basis: 100%;
+    }
+  }
 }
 
 .button-wrapper {
@@ -78,6 +84,14 @@ h2{
 
     &:first-child{
     margin-right: 1rem;
+    }
+  }
+
+  @media(max-width:680px){
+    flex-flow: row wrap;
+
+    a{
+      padding: 10px 20px;
     }
   }
 }
@@ -164,6 +178,49 @@ h2{
     text-align:right;
     padding-right: 30px
   }
+
+  @media(max-width:680px){
+    .education-items-wrapper{
+      padding-left: 30px ;
+      padding-right: 30px;
+    }
+
+    .edu-right div:first-child, .edu-left div:last-child{
+    font-size:3.5rem;
+  }
+
+  .edu-right{
+     margin-left: 10px;
+     justify-content:flex-start;
+   }
+
+   .edu-right  div:last-child{
+    padding-left: 0;
+  }
+
+  .edu-left{
+    flex-direction:column-reverse;
+  }
+  .edu-left div:first-child{
+    padding-right: 10px ;
+  }
+
+  .edu-left:nth-child(3) div:last-child{
+    text-align:right;
+    padding-right: 10px;
+  }
+
+  .edu-right:nth-child(4n+2) div:first-child{
+    &:after{
+      left: -16px ;
+    }
+  }
+
+  .edu-left:nth-child(3) div:last-child::after{
+    right: -6px ;
+  }
+
+}
 
 }
 `;

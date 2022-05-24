@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 import {Container, PersonalLogo, ThemeToggle } from './styles';
 
@@ -48,7 +48,9 @@ export function Header({themeModeProps,updateTheme}:FuncProps) {
     
     <Container>
       <PersonalLogo>
+       <Link to="/"> 
       {isDarkTheme ? <img src={LogoWhite} alt="Wanderson Castro" /> : <img src={LogoBlack} alt="Wanderson Castro" /> }
+      </Link>
       </PersonalLogo>
 
     <Burger />
