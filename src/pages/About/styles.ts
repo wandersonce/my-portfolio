@@ -87,6 +87,7 @@ h2{
   justify-content:center;
   align-items:center;
   flex-direction: column;
+  padding-bottom: 60px;
 
   .title-wrapper{
     max-width: 250px;
