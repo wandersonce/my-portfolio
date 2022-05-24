@@ -10,6 +10,10 @@ type OpenState = {
 export function Burger() {
   const [open , setOpen] = useState<boolean>(false);
 
+  const  updateOpen = (open: boolean) => {
+    setOpen(open);
+  }
+
   return(
     <>
     <BurgerMenu open={open} onClick={() => setOpen(!open)}>
@@ -17,7 +21,7 @@ export function Burger() {
       <div />
       <div />
     </BurgerMenu>
-    <NavigationMenuList   open={open}/>
+    <NavigationMenuList   open={open} updateOpen={updateOpen} />
     </>
   )
 }
