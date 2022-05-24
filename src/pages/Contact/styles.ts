@@ -76,5 +76,25 @@ margin: 60px auto;
        } 
       }
     }
+
+    @media (max-width: 680px){
+      flex-flow: column-reverse nowrap;
+
+      p{
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  @media (max-width:680px){
+    padding: 0 30px;
+
+    > div > p{
+      max-width: 260px;
+    }
+    >p{
+      text-align: center;
+    }
   }
 `;
