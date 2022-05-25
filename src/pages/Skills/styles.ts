@@ -77,11 +77,29 @@ h3{
 
   >div:last-child{
     display:grid;
-    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
     gap: 30px;
 
+    >div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      align-self: center;
+      text-align: center;
+      font-weight: 600;
+      filter: opacity(0.5);
+      transition: filter 0.3s ease-in-out;
+
+      &:hover{
+        filter: opacity(1);
+      }
+    }
+
     img{
-      max-width: 200px;
+      padding-bottom: 15px;
+      max-width: 120px;
+      max-height: 80px;
     }
   }
 }
@@ -95,4 +113,19 @@ export const FixedBack = styled.div`
   background-repeat: no-repeat;
   background-position:center;
   background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  margin: auto;
+
+  >div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 `
