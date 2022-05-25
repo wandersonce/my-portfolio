@@ -104,6 +104,32 @@ margin: 60px 30px;
     }
   }
 }
+
+@media(max-width:680px){
+  >span{
+    margin-bottom: 0;
+  }
+
+  >div{
+    flex-direction: column;
+
+    >div{
+      flex-basis: 100%;
+      width: 100%;
+      
+      > div{
+        margin-bottom:30px;
+      }
+    }
+
+    >div:last-child{
+      margin-top: 40px;
+      grid-template-columns: repeat(2, minmax(50px, 1fr));
+      gap: 10px;
+    }
+  }
+}
+
 `
 
 export const FixedBack = styled.div`
@@ -137,6 +163,17 @@ export const FixedBack = styled.div`
       font-weight: 600;
       font-size:1.4rem;
       color: #fff;
+    }
+  }
+
+  @media(max-width:680px){
+    flex-direction: column;
+    height: auto;
+    padding: 0 30px;
+    
+    >div{
+      width: 100%;
+      margin: 30px 0;
     }
   }
 `
@@ -186,4 +223,17 @@ img{
   max-height: 120px;
 }
 
+@media(max-width:680px){
+  >span{
+    margin-bottom: 20px;
+  }
+
+  >div{
+    flex-direction:column;
+
+    >div{
+      margin: 20px 0;
+    }
+  }
+}
 `
