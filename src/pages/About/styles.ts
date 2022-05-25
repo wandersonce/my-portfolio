@@ -4,7 +4,7 @@ import { fadeInUp, fadeInLeft } from 'react-animations';
 const fadeInUpAnimation = keyframes`${fadeInUp}`;
 const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
 
-export const Container = styled.div`
+export const Container = styled.main`
 h2{
   font-size:2.5rem;
   animation: 1s ${fadeInUpAnimation};

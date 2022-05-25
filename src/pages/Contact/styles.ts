@@ -5,7 +5,7 @@ import { fadeInUp, fadeInLeft } from 'react-animations';
 const fadeInUpAnimation = keyframes`${fadeInUp}`;
 const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
 
-export const Container = styled.div`
+export const Container = styled.main`
 display: flex;
 justify-content: center;
 align-items: center;

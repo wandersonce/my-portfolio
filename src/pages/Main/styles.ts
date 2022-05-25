@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import backgroundNameImg from '../../assets/coding6.jpg';
 
-export const Container = styled.div`
+export const Container = styled.main`
 display: flex;
 align-items: center;
 justify-content: center;
