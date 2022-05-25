@@ -1,9 +1,9 @@
 import Lottie from 'react-lottie';
-import TypeAnimation from 'react-type-animation';
+import Typed from "react-typed";
 
 import webDevelopment from '../../assets/lotties/webdevelopment.json'
 
-import { Container, FixedBack, SkillsWrapper } from "./styles";
+import { Container, Ecommerce, FixedBack, SkillsWrapper } from "./styles";
 
 export function Skills() {
   const defaultOptions = {
@@ -20,12 +20,16 @@ export function Skills() {
         </div>
       
         <SkillsWrapper>
-        <TypeAnimation
-              cursor={false}
-              sequence={['<> Front-end Developer </>', 2000, '']}
-              wrapper="h3"
-              repeat={Infinity}
-            />
+
+        <Typed
+        strings={[
+            "Front-end Developer 💻"
+          ]}
+          typeSpeed={100}
+          backSpeed={100}
+          loop
+        />
+
           <div>
             <div>
             <Lottie 
@@ -68,6 +72,25 @@ export function Skills() {
           <p>Award Website</p>
           </div>
         </FixedBack>
+
+        <Ecommerce>
+
+        <Typed
+        strings={[
+            "CMS &#38; E-commerce 🛒"
+          ]}
+          typeSpeed={100}
+          backSpeed={100}
+          loop
+        />
+
+          <div>
+             <div> <img src={require('../../assets/skills/WordPress-Logo.png')} alt="Wordpress Logo" /> WordPress</div>
+              <div> <img src={require('../../assets/skills/WooCommerce.png')} alt="WooCommerce Logo" /> WooCommerce</div>
+              <div> <img src={require('../../assets/skills/shopify.png')} alt="Shopify Logo" /> Shopify</div>
+          </div>
+
+        </Ecommerce>
     </Container>
   )
 }

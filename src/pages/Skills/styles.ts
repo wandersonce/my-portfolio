@@ -58,9 +58,10 @@ justify-content: center;
 align-items: center;
 margin: 60px 30px;
 
-h3{
+>span{
   font-size: 1.5rem;
   margin-bottom: 50px;
+  font-weight: 600;
 }
 
 >div{
@@ -135,6 +136,54 @@ export const FixedBack = styled.div`
       right: 12%;
       font-weight: 600;
       font-size:1.4rem;
+      color: #fff;
     }
   }
+`
+
+export const Ecommerce = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+>span{
+  font-size: 1.5rem;
+  margin: 50px 0;
+  font-weight: 600;
+}
+
+>div{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+
+  div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 15px;
+
+    border-radius: 10px;
+    font-weight: 600;
+    font-size:1.4rem;
+    filter: opacity(0.5);
+    transition: filter 0.3s ease-in-out;
+
+    &:hover{
+      background-color: var(--dark-gray);
+      filter: opacity(1);
+    }
+  }
+}
+
+img{
+  padding-bottom: 15px;
+  max-width: 150px;
+  max-height: 120px;
+}
+
 `
