@@ -127,5 +127,14 @@ export const FixedBack = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+
+    p{
+      position: absolute;
+      top: 20px;
+      right: 12%;
+      font-weight: 600;
+      font-size:1.4rem;
+    }
   }
 `

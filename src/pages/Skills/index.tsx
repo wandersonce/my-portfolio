@@ -53,12 +53,19 @@ export function Skills() {
         <FixedBack>
           <div>
             <img src={require('../../assets/happy.png')} alt="Happy Face" />
+            <p>
+             Happy Clients
+            </p>
           </div>
           <div>
           <img src={require('../../assets/projectDone.png')} alt="Project Done" />
+          <p>
+          Delivery Date
+          </p>
           </div>
           <div>
           <img src={require('../../assets/award.png')} alt="Award" />
+          <p>Award Website</p>
           </div>
         </FixedBack>
     </Container>
