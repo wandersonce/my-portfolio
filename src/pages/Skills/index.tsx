@@ -47,6 +47,7 @@ export function Skills() {
               <div> <img src={require('../../assets/skills/tailwindcss.png')} alt="Tailwind Logo" /> Tailwind Css</div>
               <div> <img src={require('../../assets/skills/reactjs.png')} alt="ReactJs Logo" /> ReactJs</div>
               <div> <img src={require('../../assets/skills/nextjs.png')} alt="NextJs Logo" /> NextJs</div>
+              <div> <img src={require('../../assets/skills/liquid.png')} alt="Liquid Logo" /> Liquid</div>
               <div> <img src={require('../../assets/skills/sass.webp')} alt="Sass Logo" /> Sass</div>
               <div> <img src={require('../../assets/skills/php.png')} alt="Php Logo" /> Php</div>
               <div> <img src={require('../../assets/skills/sql.png')} alt="Sql Logo" /> MySql</div>

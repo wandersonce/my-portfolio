@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef, useLayoutEffect} from 'react';
 import { GitWrapper } from './styles';
 
 interface Repository{
@@ -10,7 +10,9 @@ interface Repository{
 }
 
 function GitInformation() {
+
   const [repositories, setRepositories] = useState<Repository[]>([]); 
+  const [loadingState, setLoadingState] = useState('start');
 
   useEffect(() => {
     fetch('https://api.github.com/users/wandersonce/repos?per_page=100') 
@@ -18,8 +20,17 @@ function GitInformation() {
       .then((data) => setRepositories(data));
   }, []);
 
+  useEffect(() => {
+    if (loadingState !== "start") return;
+      setLoadingState("complete");
+  }, [repositories]);
+
   return (
-    <GitWrapper>
+    <>
+    { 
+        loadingState === "start" 
+          ? <div className="loading"> <h1>Loading data...</h1></div> 
+          : <GitWrapper>
       {repositories.map((repository, index) => {
         return (
           <div key={repository.id} >
@@ -33,8 +44,9 @@ function GitInformation() {
           </div>
         );
       })}
-
     </GitWrapper>
+     }
+    </>
   )
 }
 
