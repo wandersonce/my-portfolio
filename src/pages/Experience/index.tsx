@@ -12,14 +12,24 @@ export function Experience() {
   };
   return(
     <Container>
-      <div>
-      <Lottie 
-              options={defaultOptions}
-              height={400}
-              width={400}
-              />
+      <div className="header-wrapper">
+        <div>
+        <Lottie 
+                options={defaultOptions}
+                height={400}
+                width={400}
+                />
+        </div>
+        <div>
+            <div>
+                <h2>EXPERIENCE</h2>
+                <p>Jobs So Far</p>
+            </div>
+        </div>
       </div>
-      <div></div>
+      <div className="experience-wrapper">
+
+      </div>
     </Container>
   )
 }

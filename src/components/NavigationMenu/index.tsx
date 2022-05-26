@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import {NavigationMenu} from './styles';
 
@@ -8,9 +7,8 @@ interface NavigationMenuListProps{
   updateOpen: (open: boolean) => void;
 }
 
-
 export function NavigationMenuList({open,updateOpen }:NavigationMenuListProps) {
-
+  
   const handleClick = () => {
     updateOpen(!open);
   }

@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react'
+
 import { NavigationMenuList } from '.';
 
 import {BurgerMenu} from './styles';
@@ -16,7 +17,7 @@ export function Burger() {
 
   return(
     <>
-    <BurgerMenu open={open} onClick={() => setOpen(!open)}>
+    <BurgerMenu open={open} onClick={() => setOpen(!open)} >
       <div />
       <div />
       <div />
