@@ -72,7 +72,7 @@ export function Experience() {
         <div>
             <p className="company-name">Flinnwest Solutions Inc. </p>
             <p className="position">Web Developer</p>
-            <p className="work-date">08/2020 – Now</p>
+            <p className="work-date">08/2020 – 11/2021</p>
         </div>
         <div>
             <ul>
