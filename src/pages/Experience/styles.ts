@@ -25,13 +25,17 @@ margin: 60px auto;
 
     > div:last-child{
       align-items:center;
-      >div{
-        width: 250px !important;
-      }
+        >div{
+          width: 250px !important;
+        }
 
          p{
           width:235px !important;
         }
+    }
+
+    >div:first-child >div{
+      width: 90vw !important;
     }
   }
 }
