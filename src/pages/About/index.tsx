@@ -1,10 +1,19 @@
 import {motion} from 'framer-motion';
 import {Link} from "react-router-dom";
+import Lottie from 'react-lottie';
+
+import coding from '../../assets/lotties/coding.json'
 
 import Education from './Education';
 import { Container } from './styles';
 
 export function About() {
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: coding,
+  };
 
   return(
     <motion.div 
@@ -16,7 +25,13 @@ export function About() {
 
       <Container>
         <div className="about-wrapper">
-          <div></div>
+          <div>
+              <Lottie 
+                  options={defaultOptions}
+                  height={600}
+                  width={600}
+                  />
+          </div>
           <div>
             <div className="title-wrapper">
               <h2>ABOUT ME</h2>

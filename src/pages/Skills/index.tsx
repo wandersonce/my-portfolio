@@ -1,7 +1,7 @@
 import Lottie from 'react-lottie';
 import Typed from "react-typed";
 
-import webDevelopment from '../../assets/lotties/webdevelopment.json'
+import webDevelopment from '../../assets/lotties/webdevelopment.json';
 
 import { Container, Ecommerce, FixedBack, SkillsWrapper } from "./styles";
 

@@ -50,18 +50,21 @@ h2{
     flex-basis:50%;
   }
 
-
-
   >div>p{
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
   @media (max-width:680px){
-    flex-flow: column wrap;
+    flex-flow: column-reverse wrap;
 
     >div{
       flex-basis: 100%;
+    }
+
+    >div:first-child > div{
+      width: 90vw !important;
+      height: auto !important;
     }
   }
 }
