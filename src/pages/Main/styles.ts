@@ -7,7 +7,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 100%;
-height: 100%;
+height: calc(100vh - 200px);
 position:relative;
 
 .center-container{
@@ -30,12 +30,13 @@ position:relative;
   }
 
   div h1{
-    font-size:7rem;
+    font-size:6rem;
     font-weight:bold;
     background: url(${backgroundNameImg})  no-repeat left;
     background-size: contain;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    overflow:hidden;
   }
 
   .fadeIn-item {
