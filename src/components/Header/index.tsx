@@ -3,8 +3,8 @@ import { Outlet, Link } from "react-router-dom";
 
 import {Container, PersonalLogo, ThemeToggle } from './styles';
 
-import LogoWhite from '../../assets/logoWhite.svg';
-import LogoBlack from '../../assets/logoBlack.svg';
+import LogoWhite from '../../assets/logoWhiteNew.png';
+import LogoBlack from '../../assets/logoOrange.png';
 import { Burger } from '../NavigationMenu/Burger';
 
 interface FuncProps {
