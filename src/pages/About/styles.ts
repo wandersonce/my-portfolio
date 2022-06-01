@@ -276,6 +276,8 @@ h2{
       flex-flow: column wrap;
       >div:last-child{
         font-size: 1rem;
+        flex-flow: column nowrap;
+        overflow: initial;
       }
     }
   }
