@@ -273,10 +273,9 @@ h2{
 
     @media(max-width:680px){
       padding: 20px;
-      flex-flow: column wrap;
+      flex-flow: column nowrap;
       >div:last-child{
         font-size: 1rem;
-        flex-flow: column nowrap;
         overflow: initial;
       }
     }
