@@ -76,9 +76,16 @@ position:relative;
 }
 
 @media only screen and (max-width: 640px) {
+  height: 100%;
   .center-container{
     div h1{
       font-size:4rem;
+    }
+
+    div{
+     img{
+       max-height:400px;
+     }
     }
   }
 }
