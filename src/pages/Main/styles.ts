@@ -24,6 +24,12 @@ position:relative;
     flex-direction:column;
     padding:4rem;
 
+    &:first-child{
+      padding-bottom:0;
+      display:flex;
+      align-items:center;
+    }
+
     h3{ 
       font-size:1.6rem;
     }

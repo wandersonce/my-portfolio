@@ -1,6 +1,8 @@
 import {motion} from 'framer-motion';
 import { Container } from "./styles"
 
+import Selfie from '../../assets/selfie.png';
+
 export function Main() {
 
   return(
@@ -11,7 +13,9 @@ export function Main() {
     animate={{opacity:1}}
     exit={{ opacity: 0 }}
     >
-    <div></div>
+    <div>
+      <img src={Selfie} alt="Wanderson's Selfie" />
+    </div>
     <div>
       <h1 className="fadeIn-item">
       I'm <br />
