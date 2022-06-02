@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react';
-import { Routes, Route ,  useLocation} from 'react-router-dom';
+import { Routes, Route ,  useLocation } from 'react-router-dom';
 
 import {AnimatePresence} from 'framer-motion';
+import ScrollToTop from './scrollToTop';
 
 import {Main} from './pages/Main'
 import {About} from './pages/About/';
@@ -15,6 +16,7 @@ const location = useLocation();
 
   return (
     <AnimatePresence>
+      <ScrollToTop />
       <Routes location={location}  key={location.pathname}>
         <Route path="/"  element={<Main />} />
         <Route path="/about" element={<About />} />

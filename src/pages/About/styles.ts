@@ -56,7 +56,7 @@ h2{
   }
 
   @media (max-width:680px){
-    flex-flow: column-reverse wrap;
+    flex-flow: column-reverse nowrap;
 
     >div{
       flex-basis: 100%;
