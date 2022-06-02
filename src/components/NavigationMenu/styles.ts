@@ -15,7 +15,7 @@ flex-flow: row nowrap;
   
   flex-flow: column nowrap;
   
-  background-color: var(--dark-gray);
+  background-color: #A9A9A9;
   padding: 1rem 2rem;
   -webkit-box-shadow: -9px 0px 17px 2px rgba(0,0,0,0.24); 
   box-shadow: -9px 0px 17px 2px rgba(0,0,0,0.24);
