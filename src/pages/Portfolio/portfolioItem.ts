@@ -10,9 +10,24 @@ export default [
     website:'https://bcapartmentinsider.com/'
   },
   {
+    title: 'B Smart Insurance',
+    img: require('../../assets/websites/bsmart.png'),
+    website:'https://bsmartinsurance.com/'
+  },
+  {
     title: 'Cameron Contracting',
     img: require('../../assets/websites/cameron.png'),
     website:'https://cameroncontractingltd.ca/'
+  },
+  {
+    title: 'David Bourchard Books',
+    img: require('../../assets/websites/davidbou.png'),
+    website:'https://davidbouchardbooks.com/'
+  },
+  {
+    title: 'DibFit',
+    img: require('../../assets/websites/dibfit.png'),
+    website:'https://dibfit.com/'
   },
   {
     title: 'General Internet',
@@ -88,6 +103,11 @@ export default [
     title: 'Two Brothers Toffe',
     img: require('../../assets/websites/twobrothers.png'),
     website:'https://twobrotherstoffee.com/'
+  },
+  {
+    title: 'Warda Restaurant',
+    img: require('../../assets/websites/warda.png'),
+    website:'https://wardarestaurant.co.uk/'
   },
   {
     title: 'Uno Digital',
