@@ -56,7 +56,7 @@ export function Portfolio() {
     >
       <Container>
         <div>
-          <h2>PORFOLIO</h2>
+          <h2>PORTFOLIO</h2>
           <p>My Work</p>
         </div>
 
