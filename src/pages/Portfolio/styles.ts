@@ -66,6 +66,13 @@ margin: 60px auto;
     }
   }
 
+  .portfolioAlert{
+    width: 100%;
+    text-align: center;
+    font-size:12px;
+    margin-top:10px !important;
+  }
+
   @media (max-width: 810px){
     h2{
       font-size: 1.8rem;
@@ -139,6 +146,7 @@ export const PortfolioBox = styled.div`
     opacity: 0;
     transition: all 0.5s ease-in-out;
   }
+  
 
   @media(max-width:810px){
     grid-template-columns: repeat(3, 1fr);

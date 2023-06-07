@@ -15,6 +15,7 @@ export function PortfolioItems({ postsToRender }: any) {
                       </a>
                     </div>
         ))}
+
     </PortfolioBox>
 
   )

@@ -61,7 +61,9 @@ export function Portfolio() {
         </div>
 
       <PortfolioItems postsToRender={postsToShow} />
-
+      <div className='portfolioAlert'>
+          Some Websites may have changed from my initial development. If you have any question contact me.
+        </div>
       {buttonVisible ? 
       <button onClick={handleShowMorePosts}>Load more</button> 
       : ' '}
