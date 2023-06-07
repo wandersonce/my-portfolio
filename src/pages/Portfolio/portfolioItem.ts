@@ -1,13 +1,28 @@
 export default [
   {
+    title: 'BamGames Bio Link',
+    img: require('../../assets/websites/bamgames.png'),
+    website:'https://bamgamesofc.vercel.app/'
+  },
+  {
     title: 'Bc Apartment Insiders',
     img: require('../../assets/websites/bcai.png'),
     website:'https://bcapartmentinsider.com/'
   },
   {
+    title: 'Bedrock-Service',
+    img: require('../../assets/websites/bedrock.png'),
+    website:'https://bedrock-service.com/'
+  },
+  {
     title: 'Beck Insurance',
     img: require('../../assets/websites/beckinsurance.png'),
     website:'https://bcapartmentinsider.com/'
+  },
+  {
+    title: 'Business OS',
+    img: require('../../assets/websites/bos.png'),
+    website:'https://businessos.ca/'
   },
   {
     title: 'B Smart Insurance',
@@ -30,9 +45,24 @@ export default [
     website:'https://dibfit.com/'
   },
   {
+    title: 'Fixer Production',
+    img: require('../../assets/websites/fixerProduction.png'),
+    website:'https://fixerproduction.com'
+  },
+  {
+    title: 'Grantson Construction',
+    img: require('../../assets/websites/grantson.png'),
+    website:'https://www.grantsonconstruction.com/'
+  },
+  {
     title: 'General Internet',
     img: require('../../assets/websites/gi.png'),
     website:'https://generalinternet.ca'
+  },
+  {
+    title: 'GI Training',
+    img: require('../../assets/websites/giTraining.png'),
+    website:'https://gitraining.ca/'
   },
   {
     title: 'Linda Pet',
@@ -60,6 +90,11 @@ export default [
     website:'https://corp.payfare.com/'
   },
   {
+    title: 'Raydius',
+    img: require('../../assets/websites/raydius.png'),
+    website:'https://raydius.ca/'
+  },
+  {
     title: 'Riise EV',
     img: require('../../assets/websites/riise.png'),
     website:'https://riiseev.com/'
@@ -70,7 +105,7 @@ export default [
     website:'https://seacanlabs.com'
   },
   {
-    title: 'silverhammer',
+    title: 'Silverhammer',
     img: require('../../assets/websites/silverhammer.png'),
     website:'https://silverhammermining.com/'
   },
@@ -108,6 +143,11 @@ export default [
     title: 'Warda Restaurant',
     img: require('../../assets/websites/warda.png'),
     website:'https://wardarestaurant.co.uk/'
+  },
+  {
+    title: 'WeVest',
+    img: require('../../assets/websites/wevest.png'),
+    website:'https://wevest.ca/'
   },
   {
     title: 'Uno Digital',
