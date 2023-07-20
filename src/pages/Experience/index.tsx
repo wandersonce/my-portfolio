@@ -25,7 +25,7 @@ export function Experience() {
                 <h2>EXPERIENCE</h2>
                 <p>Jobs So Far</p>
             </div>
-                <a target="_blank" href={require('../../assets/resume.pdf')} rel="noreferrer" >SEE RESUME</a>
+                <a target="_blank" href={require('../../assets/WandersonResume.pdf')} rel="noreferrer" >SEE RESUME</a>
         </div>
       </div>
       <div className="experience-wrapper">

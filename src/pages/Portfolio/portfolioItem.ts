@@ -95,11 +95,6 @@ export default [
     website:'https://raydius.ca/'
   },
   {
-    title: 'Riise EV',
-    img: require('../../assets/websites/riise.png'),
-    website:'https://riiseev.com/'
-  },
-  {
     title: 'Seacan Labs',
     img: require('../../assets/websites/seacan.png'),
     website:'https://seacanlabs.com'
