@@ -35,6 +35,11 @@ export default [
     website:'https://cameroncontractingltd.ca/'
   },
   {
+    title: 'Canadian Business Ventures',
+    img: require('../../assets/websites/cbv.png'),
+    website:'https://canadianbusinessventures.com/'
+  },
+  {
     title: 'David Bourchard Books',
     img: require('../../assets/websites/davidbou.png'),
     website:'https://davidbouchardbooks.com/'
@@ -135,14 +140,24 @@ export default [
     website:'https://twobrotherstoffee.com/'
   },
   {
+    title: 'WeVest',
+    img: require('../../assets/websites/wevest.png'),
+    website:'https://wevest.ca/'
+  },
+  {
     title: 'Warda Restaurant',
     img: require('../../assets/websites/warda.png'),
     website:'https://wardarestaurant.co.uk/'
   },
   {
-    title: 'WeVest',
-    img: require('../../assets/websites/wevest.png'),
-    website:'https://wevest.ca/'
+    title: 'Wendell Home Inspection',
+    img: require('../../assets/websites/wendellHome.png'),
+    website:'https://wendellhomeinspections.com/'
+  },
+  {
+    title: 'Wanderfy (Personal Project)',
+    img: require('../../assets/websites/wanderfy.png'),
+    website:'https://wanderfy.vercel.app/'
   },
   {
     title: 'Uno Digital',
