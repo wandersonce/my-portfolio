@@ -117,12 +117,12 @@ export const PortfolioBox = styled.div`
       .titleWrapper{
         opacity: 1;
       }
+    }
 
-      img{
-        max-height:210px;
-        object-fit:cover;
-        height:100%;
-      }
+    img{
+      max-height:210px;
+      object-fit:cover;
+      height:100%;
     }
   }
 
