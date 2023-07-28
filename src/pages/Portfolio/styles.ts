@@ -104,6 +104,7 @@ export const PortfolioBox = styled.div`
 
    >div a{
     max-width: 250px;
+    height: 100%;
     display: flex;
     flex-flow: column nowrap;
     text-decoration: none;
@@ -115,6 +116,12 @@ export const PortfolioBox = styled.div`
     &:hover{
       .titleWrapper{
         opacity: 1;
+      }
+
+      img{
+        max-height:210px;
+        object-fit:cover;
+        height:100%;
       }
     }
   }
@@ -162,6 +169,7 @@ export const PortfolioBox = styled.div`
         width: 100%;
         height:100%;
         object-fit:cover;
+        max-height:150px;
       }
     }
   }
