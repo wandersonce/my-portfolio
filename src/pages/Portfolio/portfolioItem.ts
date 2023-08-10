@@ -50,6 +50,11 @@ export default [
     website:'https://dibfit.com/'
   },
   {
+    title: 'Ethernal AI',
+    img: require('../../assets/websites/ethernalai.png'),
+    website:'https://ethernal-ai.vercel.app/'
+  },
+  {
     title: 'Fixer Production',
     img: require('../../assets/websites/fixerProduction.png'),
     website:'https://fixerproduction.com'
