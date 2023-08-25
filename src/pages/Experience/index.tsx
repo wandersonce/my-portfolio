@@ -25,7 +25,7 @@ export function Experience() {
                 <h2>EXPERIENCE</h2>
                 <p>Jobs So Far</p>
             </div>
-                <a target="_blank" href={require('../../assets/WandersonResume.pdf')} rel="noreferrer" >SEE RESUME</a>
+                <a target="_blank" href={require('../../assets/WandersonCResume.pdf')} rel="noreferrer" >SEE RESUME</a>
         </div>
       </div>
       <div className="experience-wrapper">
@@ -36,16 +36,13 @@ export function Experience() {
         </div>
         <div>
             <ul>
-              <li>Build a custom WordPress Website based on the offered mockup.</li>
-              <li>Build and Customize ecommerces on Wordpress and Shopify.</li>
-              <li>Build Websites using HTML/CSS/JavaScript.</li>
-              <li>Web maintenance (updates) on previously built web pages.</li>
-              <li>Create and optimize content for websites using various graphics, databases, animations, and software.</li>
-              <li>Develop websites architecture and determine hardware and software requirements.</li>
-              <li> Research and evaluate a variety of interactive media products.</li>
-              <li> Conduct tests and perform security and quality assurance on new and existing web pages.</li>
-              <li> Setup DNS Server and SSL Certificates.</li>
-              <li> Deploy, Maintain, and move websites.</li>
+              <li><strong>Revamped: </strong>Transformed mockups into fully functional, custom websites using cutting-edge technologies.</li>
+              <li><strong>Engineered:</strong> Built and expertly tailored e-commerce platforms using Javascript, PHP, WordPress and Shopify, enhancing online business capabilities.</li>
+              <li><strong>Designed and Crafted:</strong> Produced engaging websites, meticulously crafted using HTML, CSS, and JavaScript to captivate user attention, always following the best UI/UX principals.</li>
+              <li><strong>Collaborated: </strong>Collaborated closely with Software Developers, contributing to PERFEX system adjustments using PHP and JavaScript.</li>
+              <li><strong>Ensured Robustness:</strong> Executed comprehensive tests and meticulously integrated security measures into web pages.</li>
+              <li><strong>Implemented Security Measures:</strong> Orchestrated the setup of DNS servers and SSL certificates, fortifying secure communication channels.</li>
+              <li><strong>Technological Stacks:</strong> HTML5, CSS, JavaScript, PHP, MySQL, WordPress, Shopify, DNS, SSL.</li>
             </ul>
         </div>
       </div>
@@ -53,17 +50,14 @@ export function Experience() {
       <div className="experience-wrapper">
         <div>
             <p className="company-name">Diluceo</p>
-            <p className="position">Web Developer -Freelancer</p>
+            <p className="position">Web Developer - On Call</p>
             <p className="work-date">06/2021 – Now</p>
         </div>
         <div>
             <ul>
-              <li>Create custom code for responsive websites based on an approved mockup from the design team and client.</li>
-              <li>Build and Customize ecommerces on Wordpress and Shopify.</li>
-              <li>Build Websites using HTML/CSS/JavaScript.</li>
-              <li>Web maintenance (updates) on previously built web pages.</li>
-              <li>Create and optimize content for websites using various graphics, databases, animations, and software.</li>
-              <li>Develop websites architecture and determine hardware and software requirements.</li>
+              <li><strong>Engineered Responsive Solutions:</strong> Developed custom code, skillfully tailored to create responsive websites, adhering to design mockups.</li>
+              <li><strong>Sustained and Enhanced:</strong> Conducted meticulous web maintenance and swift updates, ensuring seamless user experiences on existing pages.</li>
+              <li><strong>Stack Expertise:</strong> HTML5, CSS, JavaScript, Typescript, ReactJs, Shopify, PHP, WooCommerce, MongoDb, MySQL.</li>
             </ul>
         </div>
       </div>
@@ -76,14 +70,12 @@ export function Experience() {
         </div>
         <div>
             <ul>
-              <li>Create custom code for websites based on an approved mockup from the design team and client.</li>
-              <li> Web maintenance (updates) on previously built web pages</li>
-              <li>Create and optimize content for websites using various graphics, databases, animations, and software.</li>
-              <li>Develop websites architecture and determine hardware and software requirements.</li>
-              <li> Research and evaluate a variety of interactive media products.</li>
-              <li> Conduct tests and perform security and quality assurance on new and existing web pages.</li>
-              <li> Setup DNS Server and SSL Certificates.</li>
-              <li> Deploy, Maintain, and move websites.</li>
+              <li><strong>Translated Vision into Reality:</strong> Translated design mockups into functional websites, crafting custom code to exact specifications.</li>
+              <li><strong>Continuous Enhancement:</strong> Maintained and updated web pages with precision, incorporating new features and improvements.</li>
+              <li><strong>Visual Excellence:</strong> Optimized content by skillfully blending graphics, databases, and animations to create visually compelling websites.</li>
+              <li><strong>Architectural Influence:</strong> Contributed valuable insights to websites' architecture, determining intricate technical requirements.</li>
+              <li><strong>Quality Assurance and Security:</strong> Rigorously tested and fortified web pages, assuring quality and implementing security protocols.</li>
+              <li><strong>Proficient Stacks:</strong> HTML5, CSS, PHP, MySQL, Wordpress, Shopify, Databases, DNS, SSL.</li>
             </ul>
         </div>
       </div>

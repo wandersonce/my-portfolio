@@ -26,7 +26,6 @@ export function Portfolio() {
     arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedPosts];
     console.log(slicedPosts, arrayForHoldingPosts)
     if(slicedPosts.length <= 4 && arrayForHoldingPosts.length >= 9){
-      console.log('here');
       setButtonVisible(false);
     }
     setPostsToShow(arrayForHoldingPosts);
