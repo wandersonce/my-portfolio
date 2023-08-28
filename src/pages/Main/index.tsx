@@ -8,7 +8,6 @@ export function Main() {
 
   return(
     <Container>
-      <Particles />
     <motion.div 
     className="center-container"
     initial={{ opacity: 0 }}

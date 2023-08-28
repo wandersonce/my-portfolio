@@ -1,3 +1,4 @@
+import Particles from '../../components/Particles';
 import item from  './portfolioItem';
 import { PortfolioBox } from './styles';
 

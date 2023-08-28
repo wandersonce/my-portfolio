@@ -4,6 +4,7 @@ import Typed from "react-typed";
 import webDevelopment from '../../assets/lotties/webdevelopment.json';
 
 import { Container, Ecommerce, FixedBack, SkillsWrapper } from "./styles";
+import Particles from '../../components/Particles';
 
 export function Skills() {
   const defaultOptions = {

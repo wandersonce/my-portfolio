@@ -10,6 +10,7 @@ import {Contact} from './pages/Contact/';
 import {Skills} from './pages/Skills/';
 import {Portfolio} from './pages/Portfolio/';
 import {Experience} from './pages/Experience/';
+import Particles from './components/Particles';
 
 const RouteElement = (): JSX.Element => {
 const location = useLocation();
