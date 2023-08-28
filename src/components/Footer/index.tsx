@@ -6,7 +6,7 @@ import Socials from '../Socials/index';
 function Footer() {
   return (
     <Container>
-      <div>2022© Wanderson Castro. All rights reserved.</div>
+      <div>2023© Wanderson Castro. All rights reserved.</div>
       <div>
         <Socials />
       </div>

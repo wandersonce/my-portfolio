@@ -2,11 +2,13 @@ import {motion} from 'framer-motion';
 import { Container } from "./styles"
 
 import Selfie from '../../assets/selfie.png';
+import Particles from '../../components/Particles';
 
 export function Main() {
 
   return(
     <Container>
+      <Particles />
     <motion.div 
     className="center-container"
     initial={{ opacity: 0 }}

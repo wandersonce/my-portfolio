@@ -9,6 +9,7 @@ import {GlobalStyles, lightTheme, darkTheme} from './styles/theme';
 
 import {Header} from './components/Header/index';
 import  Footer from './components/Footer/index';
+import Particles from './components/Particles';
 
 function App() {
   const [theme, setTheme] = useState<string>("dark");

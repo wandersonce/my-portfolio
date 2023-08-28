@@ -72,6 +72,13 @@ export const GlobalStyles = createGlobalStyle<MyProps>`
     cursor:not-allowed;
   }
 
+  #tsparticles{
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    width: 100vw;
+  }
+
   @media only screen and (max-width: 640px) {
     body{
       overflow-x:hidden;
