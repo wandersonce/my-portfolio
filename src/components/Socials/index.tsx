@@ -14,12 +14,12 @@ function Socials() {
       <a href="https://github.com/wandersonce" target="_blank" rel="noreferrer">
         <img src={GitIcon} alt="Github Icon" />
       </a>
-      <a href="https://www.facebook.com/wandersonoc" target="_blank" rel="noreferrer">
+      {/* <a href="https://www.facebook.com/wandersonoc" target="_blank" rel="noreferrer">
         <img src={Facebook} alt="Facebook Icon" />
       </a>
       <a href="https://www.instagram.com/bamgamesofc" target="_blank" rel="noreferrer">
         <img src={Instagram} alt="Instagram Icon" />
-      </a>
+      </a> */}
     </Container>
   )
 }
