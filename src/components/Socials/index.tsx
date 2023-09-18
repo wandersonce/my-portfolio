@@ -1,7 +1,7 @@
 import { Container } from './styles';
 
-import Facebook from '../../assets/Icons/faceIcon.png';
-import Instagram from '../../assets/Icons/InstagramIcon.png';
+// import Facebook from '../../assets/Icons/faceIcon.png';
+// import Instagram from '../../assets/Icons/InstagramIcon.png';
 import Linkedin from '../../assets/Icons/linkedinIcon.png';
 import GitIcon from '../../assets/Icons/gitIcon.png';
 
