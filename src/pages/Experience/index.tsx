@@ -39,15 +39,6 @@ export function Experience() {
         <div>
           <ul>
             <li>
-              <strong>Revamped: </strong>Transformed mockups into fully
-              functional, custom websites using cutting-edge technologies.
-            </li>
-            <li>
-              <strong>Engineered:</strong> Built and expertly tailored
-              e-commerce platforms using Javascript, PHP, WordPress and Shopify,
-              enhancing online business capabilities.
-            </li>
-            <li>
               Architected and engineered web applications from the ground up
               using JavaScript and ReactJS, with a strong emphasis on
               performance and scalability. Meticulously crafted interfaces to
