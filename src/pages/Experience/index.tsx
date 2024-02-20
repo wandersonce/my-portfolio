@@ -33,7 +33,7 @@ export function Experience() {
       <div className="experience-wrapper">
         <div>
           <p className="company-name">General Internet</p>
-          <p className="position">Frontend Developer</p>
+          <p className="position">Full-Stack Front End Developer</p>
           <p className="work-date">11/2021 – Now</p>
         </div>
         <div>
@@ -48,27 +48,34 @@ export function Experience() {
               enhancing online business capabilities.
             </li>
             <li>
-              <strong>Designed and Crafted:</strong> Produced engaging websites,
-              meticulously crafted using HTML, CSS, and JavaScript to captivate
-              user attention, always following the best UI/UX principals.
+              Architected and engineered web applications from the ground up
+              using JavaScript and ReactJS, with a strong emphasis on
+              performance and scalability. Meticulously crafted interfaces to
+              adhere to top-tier UI/UX principles, ensuring a seamless and
+              intuitive user experience throughout the application lifecycle.
             </li>
             <li>
-              <strong>Collaborated: </strong>Collaborated closely with Software
-              Developers, contributing to PERFEX system adjustments using PHP
-              and JavaScript.
+              Engineered robust e-commerce platforms using JavaScript, PHP,
+              WordPress, Webflow, and Shopify, significantly enhancing online
+              business capabilities. Implemented performance optimizations,
+              resulting in increased website visits and customer interactions.
             </li>
             <li>
-              <strong>Ensured Robustness:</strong> Executed comprehensive tests
-              and meticulously integrated security measures into web pages.
+              Executed thorough testing procedures and integrated robust
+              security measures into web pages, ensuring a secure online
+              environment for users. Implemented continuous integration and
+              deployment (CI/CD) pipelines for streamlined development and
+              consistent updates.
             </li>
             <li>
-              <strong>Implemented Security Measures:</strong> Orchestrated the
-              setup of DNS servers and SSL certificates, fortifying secure
-              communication channels.
+              Orchestrated the setup of DNS servers and SSL certificates,
+              fortifying secure communication channels. Leveraged server-side
+              rendering with Next.js to efficiently call and integrate with
+              external APIs, enhancing performance and functionality.
             </li>
             <li>
-              <strong>Technological Stacks:</strong> HTML5, CSS, JavaScript,
-              PHP, MySQL, WordPress, Shopify, DNS, SSL.
+              Utilized TypeScript to develop scalable and maintainable
+              codebases, ensuring code quality and reducing potential errors.
             </li>
           </ul>
         </div>
@@ -77,24 +84,33 @@ export function Experience() {
       <div className="experience-wrapper">
         <div>
           <p className="company-name">Diluceo</p>
-          <p className="position">Web Developer - On Call</p>
+          <p className="position">Front End Developer</p>
           <p className="work-date">06/2021 – Now</p>
         </div>
         <div>
           <ul>
             <li>
-              <strong>Engineered Responsive Solutions:</strong> Developed custom
-              code, skillfully tailored to create responsive websites, adhering
-              to design mockups.
+              Translated design mockups into fully functional websites using a
+              comprehensive stack of technologies, including HTML, CSS,
+              Bootstrap, JavaScript, PHP, React, and NextJs. Crafted custom code
+              with precision to exact specifications.
             </li>
             <li>
-              <strong>Sustained and Enhanced:</strong> Conducted meticulous web
-              maintenance and swift updates, ensuring seamless user experiences
-              on existing pages.
+              Engineered and customized highly tailored e-commerce platforms
+              using JavaScript, PHP, WordPress, Webflow, and Shopify.
+              Significantly enhanced online business capabilities, resulting in
+              improved customer interactions and business growth.
             </li>
             <li>
-              <strong>Stack Expertise:</strong> HTML5, CSS, JavaScript,
-              Typescript, ReactJs, Shopify, PHP, WooCommerce, MongoDb, MySQL.
+              Conducted meticulous web maintenance and swift updates, ensuring
+              seamless user experiences on existing pages. Implemented updates
+              promptly to keep pace with evolving user expectations.
+            </li>
+            <li>
+              Produced compelling web applications, meticulously crafted using
+              HTML, CSS, and JavaScript, with a special focus on ReactJs and
+              NextJs. Captivated user attention and consistently adhered to the
+              best UI/UX principles for optimal user satisfaction.
             </li>
           </ul>
         </div>
@@ -103,39 +119,29 @@ export function Experience() {
       <div className="experience-wrapper">
         <div>
           <p className="company-name">Flinnwest Solutions Inc. </p>
-          <p className="position">Web Developer</p>
+          <p className="position">Front End Developer</p>
           <p className="work-date">08/2020 – 11/2021</p>
         </div>
         <div>
           <ul>
             <li>
-              <strong>Translated Vision into Reality:</strong> Translated design
-              mockups into functional websites, crafting custom code to exact
-              specifications.
+              Translated design mockups into functional websites using a stack
+              of technologies including HTML, CSS, Bootstrap, JavaScript, PHP,
+              and React, crafting custom code to exact specifications.
             </li>
             <li>
-              <strong>Continuous Enhancement:</strong> Maintained and updated
-              web pages with precision, incorporating new features and
-              improvements.
+              Maintained and updated web pages with precision, incorporating new
+              features and improvements.
             </li>
             <li>
-              <strong>Visual Excellence:</strong> Optimized content by
-              skillfully blending graphics, databases, and animations to create
-              visually compelling websites.
+              Optimized content by skillfully blending graphics, databases, and
+              animations using HTML, CSS, Bootstrap, JavaScript, and React,
+              creating visually compelling websites.
             </li>
             <li>
-              <strong>Architectural Influence:</strong> Contributed valuable
-              insights to websites' architecture, determining intricate
-              technical requirements.
-            </li>
-            <li>
-              <strong>Quality Assurance and Security:</strong> Rigorously tested
-              and fortified web pages, assuring quality and implementing
-              security protocols.
-            </li>
-            <li>
-              <strong>Proficient Stacks:</strong> HTML5, CSS, PHP, MySQL,
-              Wordpress, Shopify, Databases, DNS, SSL.
+              Contributed valuable insights to websites' architecture,
+              determining intricate technical requirements for projects that
+              included WordPress, Webflow, and Shopify.
             </li>
           </ul>
         </div>
