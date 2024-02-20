@@ -23,7 +23,7 @@ export function Experience() {
           </div>
           <a
             target="_blank"
-            href={require('../../assets/WandersonCastroResume.pdf')}
+            href={require('../../assets/WandersonCastroResumePdf.pdf')}
             rel="noreferrer"
           >
             SEE RESUME

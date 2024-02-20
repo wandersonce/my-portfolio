@@ -49,7 +49,7 @@ export function About() {
             <div className="button-wrapper">
               <a
                 target="_blank"
-                href={require('../../assets/WandersonCastroResume.pdf')}
+                href={require('../../assets/WandersonCastroResumePdf.pdf')}
                 rel="noreferrer"
               >
                 SEE RESUME
